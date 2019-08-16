@@ -1,0 +1,26 @@
+{
+  "name": "record",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs --host 127.0.0.1 --open",
+    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs --host 127.0.0.1",
+    "build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdown-it-task-lists": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "element-ui": "^2.11.1",
+    "vuepress-plugin-cat": "^1.0.3"
+  }
+}
