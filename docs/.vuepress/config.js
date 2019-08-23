@@ -1,11 +1,14 @@
 module.exports = {
   base: '/vuepress-log/',
-  title: 'Record',
+  title: 'BFC',
   description: 'normal record',
   head: [
     ['link', { rel: 'icon', href: `/avatar.png` }],
   ],
   themeConfig: {
+    themeConfig: {
+      logo: '/bfc.jpg',
+    },
     nav: [
       { text: 'Home', link: '/' },
       {

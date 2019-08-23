@@ -8,6 +8,7 @@
 - `HEAD~n` 第n个父提交
 - `HEAD^n` 并列父提交的第n个
 - `HEAD~^2~2` 父提交的第二个并列父提交的第2个父提交
+- `--amend --no-edit` 修改提交信息，（no-edit表示提交信息不会修改）
 
 ## git branch
 - `git branch name [commit]` commit为可选
@@ -34,6 +35,8 @@
 - 在reset后，所做的变更还在，但是处于未加入暂存区状态。
 - 对远程分支无效 （除非 -f）
 - 适用于修改本地分支
+- `--hard` 会重置暂存区和工作区
+- `--soft` 会将之后的修改放到暂存区，保留工作区
 
 ## git revert
 - 会在原基础上生成一个新的提交记录
@@ -64,5 +67,12 @@
 - `git config --global -e` 使用vscode打开
 
 ```bash
+# pretty git log
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --date=short
+
+# discard changes in working directory
+git checkout -- <file>
+
+# Unstage changes to be committed
+git reset HEAD <file>
 ```

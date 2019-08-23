@@ -58,6 +58,18 @@ a == null ? undefined : a()  // throws a TypeError if `a` is neither null/undefi
                              // invokes the function `a` otherwise
 ```
 
+## 计算promise时间
+```js
+(async ()=>{
+  console.time('toast');
+	await new Promise(resolve=>{
+		resolve(111)
+	})
+  console.timeEnd('toast');
+})()
+```
+
+## 
 <script>
 export default {
 	data(){

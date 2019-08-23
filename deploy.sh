@@ -21,3 +21,5 @@ git commit -m 'deploy'
 git push -f https://github.com/youyimin/vuepress-log.git master:gh-pages
 
 cd -
+
+start https://youyimin.github.io/vuepress-log/
