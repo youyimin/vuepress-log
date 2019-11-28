@@ -66,6 +66,14 @@
 - `git config credential.helper store`
 - `git config --global -e` 使用vscode打开
 
+## 修改 `.gitjgnorte`
+```sh
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working”
+```
+
+##
 ```bash
 # pretty git log
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd)%Creset' --abbrev-commit --date=short

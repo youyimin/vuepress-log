@@ -39,6 +39,9 @@ shuf bash.md
 
 # diff文件
 diff bash.md bash_v2.md
+
+# format json
+echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
 ```
 
 

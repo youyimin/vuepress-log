@@ -278,6 +278,10 @@ function compress (source) {
 }
 console.log( compress("a=1&b=2&a=3&b=4") );
 // => "a=1,3&b=2,4"
+
+// 匹配所有汉字
+/[\u4e00-\u9fa5]/  
+/\p{Unified_Ideograph}/u
 ```
 
 <script>

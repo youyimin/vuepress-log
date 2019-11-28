@@ -41,7 +41,7 @@ terminal ctrl `
 整理代码 ctrl alt l
 ```
 
-## vimium
+## chrome 插件 vimium
 ```
 Navigating history
 H	:	Go back in history
@@ -79,3 +79,10 @@ yy	:	Copy the current URL to the clipboard
 gf	:	Cycle focus to the next frame
 i	:	Enter insert mode
 ```
+
+## Emmet
+- `div.main>div.head+div.body>div.body__left+div.body__right^div.foot` >(子标签), +(同级标签) , ^ (父标签的同级标签）
+- `div.abc[title=666 index=1 disabled]{test}` 设置class，属性，内容
+- `div*5` 重复
+- `div.a$*10` 迭代值
+- `(ul>li*10{$})*2` 分组，$自动填充
