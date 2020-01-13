@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "echarts": "^4.5.0",
     "element-ui": "^2.11.1",
+    "v-charts": "^1.19.0",
     "vuepress-plugin-cat": "^1.0.3"
   }
 }
